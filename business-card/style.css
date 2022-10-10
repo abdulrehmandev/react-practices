@@ -1,0 +1,153 @@
+:root {
+    --clr-bg: #23252C;
+    --clr-bg-card: #1A1B21;
+    --clr-bg-dark: #161619;
+    
+    --clr-white: #ffffff;
+    --clr-grey-white: #DCDCDC;
+    --clr-dark: #374151;
+    --clr-accent-brown: #F3BF99;
+    
+    --clr-icon: #918E9B;
+    
+    --btn-radius: 6px;
+    
+    --fs-regular: 11px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+p {
+    margin: 0;
+}
+
+svg {
+    width: 25px;
+    aspect-ratio: 1;
+}
+
+
+body {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--clr-bg);
+    color: var(--clr-white);
+    font-size: var(--fs-regular);
+}
+
+.card {
+    max-width: 318px;
+    background-color: var(--clr-bg-card);
+    border-radius: 10px;
+}
+
+.card > *:where(:not(:first-child)) {
+    margin-top: 0.5rem;
+}
+
+.info {
+    text-align: center;
+}
+
+.profile-image {
+    width: 100%;
+    margin: 0;
+}
+
+.info .name {
+    margin-top: 1rem;
+    font-size: 25px;
+}
+
+.info .role {
+    color: var(--clr-accent-brown);
+    margin-block: 0.1rem 0.4rem;
+    font-size: 13px;
+}
+
+.buttons-cont {
+    margin: 2rem 2rem 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-block: 20px;
+}
+
+.buttons-cont button {
+    border: none;
+    border-radius: var(--btn-radius);
+    width: 115px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    margin: 0;
+}
+
+.buttons-cont button svg {
+    height: 16px;
+    width: 16px;
+    margin-right: 10px;
+}
+
+.linkedin-btn {
+    background-color: #5093E2;
+    color: white;
+}
+
+.linkedin-btn svg path {
+    fill: white;
+}
+
+.email-btn {
+    background-color: white;
+    color: black;
+}
+
+.email-btn svg path {
+    fill: black;
+}
+
+.about,
+.interests {
+    margin: 1rem 2rem 0 2rem;
+}
+
+.about-title,
+.interests-title {
+    font-size: 16px;
+}
+
+
+.about-desc,
+.interests-desc {
+    color: var(--clr-grey-white);
+    letter-spacing: 0.1px;
+    margin-block: 8px 8px;
+}
+
+.footer {
+    background-color: var(--clr-bg-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    margin-top: 30px;
+    height: 50px;
+    border-radius: 0 0 10px 10px;
+}
+
+.footer svg > path {
+   fill: var(--clr-icon);  
+}
