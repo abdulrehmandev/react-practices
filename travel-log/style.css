@@ -1,0 +1,120 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+img {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+body {
+    background-color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+.header {
+    background-color: #F55A5A;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 7px;
+    padding-block: 15px;
+}
+
+.header--globe-icon {
+    height: 24px;
+    aspect-ratio: 1;
+}
+
+.header--text {
+    font-size: 15px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 470px;
+    min-width: 400px;
+    padding: 18px;
+    margin-inline: auto;
+    border-bottom: 1px solid #F5F5F5;
+}
+
+.card--image-cont {
+    flex: 0 0 auto;
+    display: block;
+    height: 170px;
+    width: 125px;
+    border-radius: 5px;
+}
+
+.card--image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* .cont--image-cont {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+.card--info > *:where(:not(:first-child)) {
+    margin-top: 9px;
+}
+
+.card--info-location-cont {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    font-size: 11px;
+    line-height: 12px;
+}
+
+.card--info-location-icon {
+    color: #F55A5A;
+    font-size: 16px;
+}
+
+.card--info-location-country {
+    text-transform: uppercase;
+    letter-spacing: 1.74px;
+}
+
+.card--info-location-link {
+    color: #918E9B;
+    text-decoration-line: underline;
+    margin-left: 12px;
+}
+
+.card--info-name {
+    font-size: 25px;
+}
+
+.card--info-date {
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.card--info-desc {
+    font-size: 11px;
+}
