@@ -1,0 +1,147 @@
+
+/* Variables */
+:root {
+    --clr-dark-blue: hsl(219, 85%, 26%);
+    --clr-red: hsl(1, 90%, 64%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-dark-grey: hsl(219, 12%, 42%);
+    --clr-light-grey-bg: hsl(210, 60%, 98%);
+}
+
+
+/* Reset */
+*
+ {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding-inline: 30px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    background-color: var(--clr-light-grey-bg);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Components */
+.main {
+    max-width: 800px;
+    min-width: 500px;
+    margin: auto;
+    background-color: var(--clr-white);
+    border-radius: 10px;
+    margin-block: 20px;
+    padding: 0 30px 30px 30px;
+    box-shadow: 0 0 10px hsl(205, 33%, 90%)
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    height: 60px;
+}
+
+.header--title {
+    font-size: 24px;
+}
+
+.header--noti_count {
+    background-color: var(--clr-dark-blue);
+    color: var(--clr-white);
+    height: 25px;
+    width: 25px;
+    border-radius: 5px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header--read_all {
+    margin-left: auto;
+    color: var(--clr-dark-grey);
+    font-size: 16px;
+}
+
+.noti {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    margin-block: 10px;
+    /* background-color: var(--clr-light-grey-bg); */
+    background-color: var(--clr-white);
+    padding: 12px 20px;
+    border-radius: 10px;
+    color: var(--clr-dark-grey);
+    letter-spacing: 0.02rem;
+}
+
+.noti--profile_image {
+    height: 40px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+.noti--statement {
+    line-height: 20px
+}
+
+.noti--statement *:where(:not(:first-child)) {
+    margin-left: 5px;
+}
+
+.noti--where,
+.noti--profile_name {
+    font-weight: 800;
+    color: black;
+}
+
+.noti--where {
+    color: var(--clr-dark-blue);
+}
+
+.noti--unread {
+    background-color: var(--clr-red);
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    border-radius: 50%;
+    margin-left: 12px;
+    margin-top: 6px;
+}
+
+.noti--time {
+    color: hsl(219, 14%, 63%);
+    margin-top: 6px;
+    font-size: 14px;
+}
+
+.noti--msg_cont {
+    border: 1px solid var(--clr-dark-grey);
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 8px;
+}
+
+.noti--msg a:hover {
+    text-decoration: none;
+}
